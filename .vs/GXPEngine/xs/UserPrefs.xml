@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{B5126D4C-7FE0-4552-BC8C-E68D529C22B2}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.ItemProperties.GXPEngine PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GXPEngine/Ball.cs">
+    <Files>
+      <File FileName="GXPEngine/Aim.cs" Line="26" Column="1" />
+      <File FileName="GXPEngine/circle.cs" Line="1" Column="1" />
+      <File FileName="GXPEngine/level.cs" Line="39" Column="4" />
+      <File FileName="GXPEngine/MyGame.cs" Line="12" Column="21" />
+      <File FileName="GXPEngine/Ball.cs" Line="11" Column="27" />
+      <File FileName="GXPEngine/Vec2.cs" Line="1" Column="1" />
+      <File FileName="GXPEngine/line.cs" Line="7" Column="39" />
+      <File FileName="../../../Downloads/ECM1V.Ec_Wojtowicz_Izabella/GameProgramming Assignment/GXPEngine/GXPEngine/Player.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GXPEngine" expanded="True">
+            <Node name="GXPEngine" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

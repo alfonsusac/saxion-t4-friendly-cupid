@@ -10,3 +10,9 @@
 /Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/obj/x86/Debug/GXPEngine.csproj.CoreCompileInputs.cache
 /Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/obj/x86/Debug/GXPEngine.exe
 /Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/obj/x86/Debug/GXPEngine.pdb
+/Users/kacper/Documents/GitHub/friendly-cupid/GXPEngine/bin/Debug/GXPEngine.exe
+/Users/kacper/Documents/GitHub/friendly-cupid/GXPEngine/bin/Debug/GXPEngine.pdb
+/Users/kacper/Documents/GitHub/friendly-cupid/GXPEngine/obj/x86/Debug/GXPEngine.csproj.AssemblyReference.cache
+/Users/kacper/Documents/GitHub/friendly-cupid/GXPEngine/obj/x86/Debug/GXPEngine.csproj.CoreCompileInputs.cache
+/Users/kacper/Documents/GitHub/friendly-cupid/GXPEngine/obj/x86/Debug/GXPEngine.exe
+/Users/kacper/Documents/GitHub/friendly-cupid/GXPEngine/obj/x86/Debug/GXPEngine.pdb

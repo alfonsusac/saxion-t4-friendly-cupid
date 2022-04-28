@@ -6,10 +6,10 @@ namespace GXPEngine
 		public static float targetAngle;
 
 
-		public Aim() : base ("Cupid.png")
+		public Aim() : base ("Cupid2.png")
 		{
 			SetOrigin(width / 2, 0); 
-			SetScaleXY(0.1f, 0.1f);
+			SetScaleXY(0.25f, 0.25f);
 		}
 
 		void Update()

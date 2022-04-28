@@ -9,7 +9,7 @@ public class MyGame : Game
     public MyGame() : base(800, 700, false)     // Create a window that's 800x700 and NOT fullscreen
     {
         targetFps = 60; 
-        DoTests();
+        //DoTests();
    
         AddChild(new Sprite("Heaven1.jpg"));
         level = new Level(); 

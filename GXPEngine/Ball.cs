@@ -11,7 +11,7 @@ namespace GXPEngine
 		float _bounciness = 0.99f;
 		public float points = 0;
 		int _radius;
-		float _speed = 0.1f;
+		//float _speed = 0.1f;
 		bool _islaunched = false; //jeszcze nie było wystrzelone
 
 		Aim _aiming;
@@ -35,6 +35,8 @@ namespace GXPEngine
 			Ellipse(_radius, _radius, 2 * _radius, 2 * _radius);
 		}
 
+		
+
 		void Update()
         {
 			MyGame myGame = (MyGame)game;
@@ -51,8 +53,8 @@ namespace GXPEngine
 				_oldp = position;
 				position += _velocity;
 				
-				_velocity = _velocity.Normalized() * _speed; // not really physics...
-				_speed += 0.01f;
+				//_velocity = _velocity.Normalized() * _speed; // not really physics...
+				//_speed += 0.01f;
 
 
 				FindEarliestCollisionCircle(level);

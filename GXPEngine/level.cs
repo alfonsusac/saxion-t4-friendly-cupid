@@ -30,22 +30,37 @@ namespace GXPEngine
 
 
 			//AddLine(new Vec2(600, 21), new Vec2(780, 155), 0); //linia prawy róg
-			AddLine(new Vec2(20, 20), new Vec2(300, 20), 0); //linia góra
 			//AddLine(new Vec2(680, 200), new Vec2(680, 650), 0); //linia prawy bok 1
 			//AddLine(new Vec2(780, 20), new Vec2(780, 700), 0); //linia prawy bok 2
 			//AddLine(new Vec2(20, 155), new Vec2(200, 21), 0); //linia lewy róg
-			AddLine(new Vec2(20, 20), new Vec2(20, 200), 0); //linia lewa bok
 			//AddLine(new Vec2(20, 700), new Vec2(780, 700), 0);
+
+			//Level 1
+			
+			AddLine(new Vec2(20, 20), new Vec2(300, 20), 0); //linia góra
+			AddLine(new Vec2(20, 20), new Vec2(20, 200), 0); //linia lewa bok
 			AddLine(new Vec2(20, 200), new Vec2(200, 200), 0);
 			AddLine(new Vec2(200, 200), new Vec2(250, 150), 0);
 			AddLine(new Vec2(300, 400), new Vec2(500, 200), 0);
 
 			AddLine(new Vec2(20, 300), new Vec2(20, 600), 0); //linia lewa bok
 			AddLine(new Vec2(350, 20), new Vec2(500, 170), 0); //linia lewa bok
+			
 
 
+			//Level 2
+			/*
+			AddLine(new Vec2(20, 20), new Vec2(300, 20), 0); //linia góra
+			AddLine(new Vec2(20, 20), new Vec2(20, 200), 0); //linia lewa bok
+			AddLine(new Vec2(20, 200), new Vec2(200, 200), 0);
+			AddLine(new Vec2(300, 20), new Vec2(300, 300), 0);
+			AddLine(new Vec2(150, 500), new Vec2(400, 500), 0);
+			AddLine(new Vec2(150, 350), new Vec2(150, 500), 0);
+			AddLine(new Vec2(400, 350), new Vec2(400, 500), 0);
+			*/
 
-			_ball = new Ball(740, 680, 12); // tworzenie piłki
+
+			_ball = new Ball(820, 660, 12); // tworzenie piłki
 			AddChild(_ball); 
 
 
