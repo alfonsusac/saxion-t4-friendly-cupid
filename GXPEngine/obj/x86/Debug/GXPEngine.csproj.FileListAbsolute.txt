@@ -1,0 +1,12 @@
+/Users/kacper/Desktop/ERASMUS/Physics Programming/GXPEngine/GXPEngine/bin/Debug/GXPEngine.exe
+/Users/kacper/Desktop/ERASMUS/Physics Programming/GXPEngine/GXPEngine/bin/Debug/GXPEngine.pdb
+/Users/kacper/Desktop/ERASMUS/Physics Programming/GXPEngine/GXPEngine/obj/x86/Debug/GXPEngine.csproj.AssemblyReference.cache
+/Users/kacper/Desktop/ERASMUS/Physics Programming/GXPEngine/GXPEngine/obj/x86/Debug/GXPEngine.csproj.CoreCompileInputs.cache
+/Users/kacper/Desktop/ERASMUS/Physics Programming/GXPEngine/GXPEngine/obj/x86/Debug/GXPEngine.exe
+/Users/kacper/Desktop/ERASMUS/Physics Programming/GXPEngine/GXPEngine/obj/x86/Debug/GXPEngine.pdb
+/Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/bin/Debug/GXPEngine.exe
+/Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/bin/Debug/GXPEngine.pdb
+/Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/obj/x86/Debug/GXPEngine.csproj.AssemblyReference.cache
+/Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/obj/x86/Debug/GXPEngine.csproj.CoreCompileInputs.cache
+/Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/obj/x86/Debug/GXPEngine.exe
+/Users/kacper/Desktop/ERASMUS/Physics Programming/Final Approach/GXPEngine/obj/x86/Debug/GXPEngine.pdb
