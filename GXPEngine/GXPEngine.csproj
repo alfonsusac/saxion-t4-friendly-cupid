@@ -40,8 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Button.cs" />
+    <Compile Include="GameObjects\CollisionInfo.cs" />
+    <Compile Include="GameObjects\Layer.cs" />
+    <Compile Include="GameObjects\TiledBackground.cs" />
+    <Compile Include="PhysicsObject.cs" />
     <Compile Include="GXPEngine\AddOns\Gizmos.cs" />
     <Compile Include="GXPEngine\AddOns\TiledLoader.cs" />
+    <Compile Include="Level.cs" />
     <Compile Include="MyGame.cs" />
     <Compile Include="GXPEngine\Canvas.cs" />
     <Compile Include="GXPEngine\Game.cs" />
@@ -80,12 +86,13 @@
     <Compile Include="GXPEngine\FMOD\FMODSoundSystem.cs" />
     <Compile Include="GXPEngine\SoLoud\Soloud.cs" />
     <Compile Include="GXPEngine\SoLoud\SoloudSoundSystem.cs" />
+    <Compile Include="SceneManager.cs" />
     <Compile Include="Vec2.cs" />
-    <Compile Include="level.cs" />
-    <Compile Include="circle.cs" />
-    <Compile Include="line.cs" />
-    <Compile Include="Ball.cs" />
+    <Compile Include="GameObjects\CircleUnused.cs" />
+    <Compile Include="GameObjects\LineSegment.cs" />
+    <Compile Include="GameObjects\Ball.cs" />
     <Compile Include="Aim.cs" />
+    <Compile Include="Rect2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

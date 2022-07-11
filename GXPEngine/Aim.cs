@@ -19,9 +19,9 @@ namespace GXPEngine
 
 		void aiming()
         {
-			Vec2 deltaVec = new Vec2(Input.mouseX - Ball.position.x, Input.mouseY - Ball.position.y);
-			targetAngle = deltaVec.GetAngleDegrees() - 90  ; //jaki jest kąt
-			rotation = targetAngle; //celowanie do myszki
+			//Vec2 deltaVec = new Vec2(Input.mouseX - Ball.position.x, Input.mouseY - Ball.position.y);
+			//targetAngle = deltaVec.GetAngleDegrees() - 90  ; //jaki jest kąt
+			//rotation = targetAngle; //celowanie do myszki
         }
 
 	}

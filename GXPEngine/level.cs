@@ -6,20 +6,34 @@ namespace GXPEngine
 
 	public class Level : GameObject
 	{
+		//List<Circle> _circleslist = new List<Circle>();
+
+		private int id;
+		private Game game;
 
 		private Vec2 startH; //musimy mieć to cały czas a nie tylko w jednej klatce
 		private Vec2 endH;
 		private LineSegment Hover;
 		
-
-		List<LineSegment> _lineslist = new List<LineSegment>(); //tworzymy listę z naszymi liniami
-
-		List<Circle> _circleslist = new List<Circle>();
-
 		Ball _ball;
+
+		//--------------------------------------------------------------
+		// LEVELS
+		//--------------------------------------------------------------
+		private static readonly List<Level> levels = new List<Level>();
+
+		public Level getLevel(int id)
+		{
+			return levels[id];
+		}
+		public void addLevel(Level l)
+		{
+			levels.Add(l);
+		}
 
 		public Level()
 		{
+
 			//AddCircle(new Vec2(100, 500), 20, 10);
 			//AddCircle(new Vec2(200, 300), 20, 10);
 			//AddCircle(new Vec2(300, 500), 20, 10);
@@ -37,14 +51,14 @@ namespace GXPEngine
 
 			//Level 1
 			
-			AddLine(new Vec2(20, 20), new Vec2(300, 20), 0); //linia góra
-			AddLine(new Vec2(20, 20), new Vec2(20, 200), 0); //linia lewa bok
-			AddLine(new Vec2(20, 200), new Vec2(200, 200), 0);
-			AddLine(new Vec2(200, 200), new Vec2(250, 150), 0);
-			AddLine(new Vec2(300, 400), new Vec2(500, 200), 0);
+			//AddLine(new Vec2(20, 20), new Vec2(300, 20), 0); //linia góra
+			//AddLine(new Vec2(20, 20), new Vec2(20, 200), 0); //linia lewa bok
+			//AddLine(new Vec2(20, 200), new Vec2(200, 200), 0);
+			//AddLine(new Vec2(200, 200), new Vec2(250, 150), 0);
+			//AddLine(new Vec2(300, 400), new Vec2(500, 200), 0);
 
-			AddLine(new Vec2(20, 300), new Vec2(20, 600), 0); //linia lewa bok
-			AddLine(new Vec2(350, 20), new Vec2(500, 170), 0); //linia lewa bok
+			//AddLine(new Vec2(20, 300), new Vec2(20, 600), 0); //linia lewa bok
+			//AddLine(new Vec2(350, 20), new Vec2(500, 170), 0); //linia lewa bok
 			
 
 
@@ -60,100 +74,106 @@ namespace GXPEngine
 			*/
 
 
-			_ball = new Ball(820, 660, 12); // tworzenie piłki
-			AddChild(_ball); 
-
-
-
-			//tworzenie Hovera od początku
-			startH = new Vec2(500, 680);
-			endH = new Vec2(300, 680);
-
-			Hover = new LineSegment(startH, endH, 0);
-			_lineslist.Add(Hover);
-			AddChild(Hover);
+			//_ball = new Ball(820, 660, 12); // tworzenie piłki
+			//AddChild(_ball); 
 		}
 
+		//--------------------------------------------------------------
+		// GAME OBJECTS
+		//--------------------------------------------------------------
+		private readonly List<GameObject> gameObjects = new List<GameObject>();
+		public GameObject getGameObject(int i)
+        {
+			return gameObjects[i];
+        }
+		public void addGameObject(GameObject g)
+        {
+			gameObjects.Add(g);
+        }
 
+		//--------------------------------------------------------------
+		// LINES
+		//--------------------------------------------------------------
+		private readonly List<LineSegment> lines = new List<LineSegment>();
 
 		public int GetLinesCount()
 		{
-			return _lineslist.Count; //zwraca ilość linii
+			return lines.Count; //zwraca ilość linii
 		}
 
 		public LineSegment GetLine(int i)
 		{
-			if (i >= 0 && i < _lineslist.Count)
+			if (i >= 0 && i < lines.Count)
 			{
-				return _lineslist[i];
+				return lines[i];
 			}
 			return null; //nic nie zwróci
 
 		}
 
 
-		public int CountCircles()
-		{
-			return _circleslist.Count; //zwraca ilość kółek
-		}
+		//public int CountCircles()
+		//{
+		//	return _circleslist.Count; //zwraca ilość kółek
+		//}
 
-		public Circle GetCircle(int i)
-		{
-			if (i >= 0 && i < _circleslist.Count)
-			{
-				return _circleslist[i];
-			}
-			return null; //nic nie zwróci
-		}
+		//public Circle GetCircle(int i)
+		//{
+		//	if (i >= 0 && i < _circleslist.Count)
+		//	{
+		//		return _circleslist[i];
+		//	}
+		//	return null; //nic nie zwróci
+		//}
 
 
 
-		public void AddCircle(Vec2 position, int radius, float points)
-		{
-			Circle circle = new Circle(position, radius, points);
-			AddChild(circle); //dodaje kółko do gry
-			_circleslist.Add(circle); //dodaje kółko do listy kółek
-		}
+		//public void AddCircle(Vec2 position, int radius, float points)
+		//{
+		//	Circle circle = new Circle(position, radius, points);
+		//	AddChild(circle); //dodaje kółko do gry
+		//	_circleslist.Add(circle); //dodaje kółko do listy kółek
+		//}
 
-		public void AddLine(Vec2 start, Vec2 end, float points)
-		{
-			LineSegment lineup = new LineSegment(start, end, points);
-			LineSegment linedown = new LineSegment(end, start, points);
+		//public void AddLine(Vec2 start, Vec2 end, float points)
+		//{
+		//	LineSegment lineup = new LineSegment(start, end, points);
+		//	LineSegment linedown = new LineSegment(end, start, points);
 
-			Circle linestart = new Circle(start, 0, points);
-			Circle lineend = new Circle(end, 0, points);
+		//	Circle linestart = new Circle(start, 0, points);
+		//	Circle lineend = new Circle(end, 0, points);
 
-			AddChild(lineup);
-			AddChild(linedown);
-			_lineslist.Add(lineup);
-			_lineslist.Add(linedown);
+		//	AddChild(lineup);
+		//	AddChild(linedown);
+		//	lines.Add(lineup);
+		//	lines.Add(linedown);
 
-			AddChild(linestart);
-			AddChild(lineend);
-			_circleslist.Add(linestart);
-			_circleslist.Add(lineend);
-		}
+		//	AddChild(linestart);
+		//	AddChild(lineend);
+		//	_circleslist.Add(linestart);
+		//	_circleslist.Add(lineend);
+		//}
 
-        public void MovingLine()
-        {
-            RemoveChild(Hover);
-			_lineslist.Remove(Hover);
+   //     public void MovingLine()
+   //     {
+   //         RemoveChild(Hover);
+			//lines.Remove(Hover);
 
-            if (Input.GetKey(Key.RIGHT) && startH.x<=770)
-            {
-                startH.x += 10;
-                endH.x += 10;
-            }
-            else if (Input.GetKey(Key.LEFT) && endH.x>=21)
-            {
-                startH.x -= 10;
-                endH.x -= 10;
-            }
+   //         if (Input.GetKey(Key.RIGHT) && startH.x<=770)
+   //         {
+   //             startH.x += 10;
+   //             endH.x += 10;
+   //         }
+   //         else if (Input.GetKey(Key.LEFT) && endH.x>=21)
+   //         {
+   //             startH.x -= 10;
+   //             endH.x -= 10;
+   //         }
 
-            Hover = new LineSegment(startH, endH, 0);
-            AddChild(Hover);
-			_lineslist.Add(Hover);
-        }
+   //         Hover = new LineSegment(startH, endH, 0);
+   //         AddChild(Hover);
+			//lines.Add(Hover);
+   //     }
 
 	}
 

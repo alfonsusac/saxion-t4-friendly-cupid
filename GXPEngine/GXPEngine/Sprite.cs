@@ -19,18 +19,19 @@ namespace GXPEngine
 		protected bool _mirrorY = false;
 
 		public BlendMode blendMode = null;
+        private Texture2D texture1;
 
-		/// <summary>
-		/// Initializes a new instance of the <see cref="GXPEngine.Sprite"/> class.
-		/// Specify a System.Drawing.Bitmap to use. Bitmaps will not be cached.
-		/// </summary>
-		/// <param name='bitmap'>
-		/// Bitmap.
-		/// </param>
-		/// <param name="addCollider">
-		/// If <c>true</c>, this sprite will have a collider that will be added to the collision manager.
-		/// </param> 
-		public Sprite (System.Drawing.Bitmap bitmap, bool addCollider=true) : base(addCollider)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GXPEngine.Sprite"/> class.
+        /// Specify a System.Drawing.Bitmap to use. Bitmaps will not be cached.
+        /// </summary>
+        /// <param name='bitmap'>
+        /// Bitmap.
+        /// </param>
+        /// <param name="addCollider">
+        /// If <c>true</c>, this sprite will have a collider that will be added to the collision manager.
+        /// </param> 
+        public Sprite (System.Drawing.Bitmap bitmap, bool addCollider=true) : base(addCollider)
 		{
 			if (Game.main == null) {
 				throw new Exception ("Sprites cannot be created before creating a Game instance.");
@@ -74,10 +75,15 @@ namespace GXPEngine
 			initializeFromTexture(Texture2D.GetInstance(filename, keepInCache));
 		}
 
-		//------------------------------------------------------------------------------------------------------------------------
-		//														initializeFromTexture()
-		//------------------------------------------------------------------------------------------------------------------------
-		protected void initializeFromTexture (Texture2D texture) {
+        public Sprite(Texture2D texture1)
+        {
+            this.texture1 = texture1;
+        }
+
+        //------------------------------------------------------------------------------------------------------------------------
+        //														initializeFromTexture()
+        //------------------------------------------------------------------------------------------------------------------------
+        protected void initializeFromTexture (Texture2D texture) {
 			_texture = texture;
 			_bounds = new Rectangle(0, 0, _texture.width, _texture.height);
 			setUVs();
