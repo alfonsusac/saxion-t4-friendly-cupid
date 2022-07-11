@@ -5,7 +5,7 @@ Main Library: C#, GXPEngine
 Tool Used: Figma, Notion, Visual Studio
 Work: Game Development, Project Manager, UI/UX
 
-![Untitled](Cedamus%20Amori%20a86fcdfbbb4645309df4587446d9933f/Untitled.png)
+![Untitled](https://cdn.discordapp.com/attachments/692444420980867153/995944636055027793/unknown.png)
 
 Cedamus Amori is a game prototype made with GXPEngine for Saxion Project Final Approach
 
