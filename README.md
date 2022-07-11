@@ -2,11 +2,10 @@
 
 Description: Team Project at Saxion Exchange
 
-Main Library: C#, GXPEngine
-
-Tool Used: Figma, Notion, Visual Studio
-
-Work: Game Development, Project Manager, UI/UX
+| Main Library: | C#, GXP Engine                           |
+|---------------|------------------------------------------|
+| Tool Used:    | Figma, Notion, Visual Studio             |
+| Role:         | Game Development, Project Manager, UI/UX |
 
 ![Untitled](https://cdn.discordapp.com/attachments/692444420980867153/995944636055027793/unknown.png)
 
