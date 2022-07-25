@@ -17,13 +17,13 @@ Cedamus Amori is a game prototype made with GXPEngine for Saxion Project Final A
 
 Our projects is made possible by our groupmates
 
-- Alfon: Engineer, Project Lead
-- Kacper: Engineer
+- [Alfon (Me)](https://github.com/alfonsusac): Engineer, Project Lead
+- [Kacper](https://github.com/Jokalari): Engineer
 - Filip: Game Artist
 - Bilge: Game Artist
 - [Vanessa](https://github.com/vanessagiovani): Website
 - Cina: Game Design
-- Luigi: Game Design
+- [Luigi](https://github.com/LuigiAmadeo): Game Design
 
 ## Installation
 
