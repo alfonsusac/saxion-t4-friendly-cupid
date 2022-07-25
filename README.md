@@ -13,6 +13,18 @@ Cedamus Amori is a game prototype made with GXPEngine for Saxion Project Final A
 
 [https://www.youtube.com/watch?v=te7gJx4Ods8&feature=youtu.be](https://www.youtube.com/watch?v=te7gJx4Ods8&feature=youtu.be)
 
+## Credits
+
+Our projects is made possible by our groupmates
+
+- Alfon: Engineer, Project Lead
+- Kacper: Engineer
+- Filip: Game Artist
+- Bilge: Game Artist
+- Vanessa: Website
+- Cina: Game Design
+- Luigi: Game Design
+
 ## Installation
 
 Simply Open project file GXPEngine.sln and Run the game.
