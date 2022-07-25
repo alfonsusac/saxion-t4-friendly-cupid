@@ -21,7 +21,7 @@ Our projects is made possible by our groupmates
 - Kacper: Engineer
 - Filip: Game Artist
 - Bilge: Game Artist
-- Vanessa: Website
+- [Vanessa](https://github.com/vanessagiovani): Website
 - Cina: Game Design
 - Luigi: Game Design
 
